@@ -6,6 +6,14 @@
 {% endif %}
 {% endfor %}
 </ul>
+{% assign doclist = site.posts %}
+<ul>
+{% for doc in doclist %}
+{% if doc.name contains '.md' or doc.name contains '.html' %}
+<li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.url }}</a></li>
+{% endif %}
+{% endfor %}
+</ul>
 
 ## Welcome to GitHub Pages
 
