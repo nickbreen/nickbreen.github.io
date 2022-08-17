@@ -1,3 +1,12 @@
+{% assign doclist = site.pages | sort: 'url'  %}
+<ul>
+   {% for doc in doclist %}
+        {% if doc.name contains '.md' or doc.name contains '.html' %}
+            <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.url }}</a></li>
+        {% endif %}
+    {% endfor %}
+</ul>
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/nickbreen/nickbreen.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
