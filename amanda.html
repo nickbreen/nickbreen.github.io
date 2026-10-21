@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amanda Breen</title>
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        @media screen {
+            body {
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 1.4rem;
+                align-content: stretch;
+                align-items: stretch;
+                justify-content: stretch;
+            }
+            div {
+                flex-grow: 1;
+                min-width: 20em;
+                max-width: 40em;
+                margin: 0 1em 1em;
+            }
+        }
+        
+        @media print {
+            body {
+                font-size: 12pt;
+                /*columns: 2;*/
+            }
+            div {
+                break-inside: avoid-page;
+                margin: 1em 0 1em;
+            }
+            .ztransitioning:has(h1) {
+                break-before: page;
+            }
+            .transitioning {
+                column-span: all;
+            }
+        }
+        
+        :root {
+            /* Warm autumn */
+            --autumn-terracotta:        #A9472D;
+            --autumn-terracotta-light:  #F3DED5;
+
+            --autumn-ochre:             #806000;
+            --autumn-ochre-light:       #F3E8C4;
+
+            --autumn-berry:             #87394A;
+            --autumn-berry-light:       #F0DDE1;
+
+            --autumn-plum:              #65445F;
+            --autumn-plum-light:        #E9DFE8;
+
+            /* Earthy greens and cool accents */
+            --autumn-olive:             #586332;
+            --autumn-olive-light:       #E8EBD9;
+
+            --autumn-pine:              #315B49;
+            --autumn-pine-light:        #DCE9E1;
+
+            --autumn-slate-blue:        #405C70;
+            --autumn-slate-blue-light:  #DFE8ED;
+
+            --autumn-cocoa:             #654A38;
+            --autumn-cocoa-light:       #EAE0D7;
+
+            /* Reusable roles */
+            --color-text:               #332B25;
+            --color-text-muted:         #5B5148;
+            --color-border:             #A98F78;
+            --color-border-strong:      #75604E;
+            --color-background:         #FFFFFF;
+            --color-background-soft:    #F8F5EF;
+        }
+        .philosophy {
+            --strong: var(--autumn-terracotta);
+            --light: var(--autumn-terracotta-light);
+        }
+        .welcome {
+            --strong: var(--autumn-ochre);
+            --light: var(--autumn-ochre-light);
+        }
+        .charges {
+            --strong: var(--autumn-berry);
+            --light: var(--autumn-berry-light);
+        }
+        .contact {
+            --strong: var(--autumn-plum);
+            --light: var(--autumn-plum-light);
+        }
+        .hours {
+            --strong: var(--autumn-olive);
+            --light: var(--autumn-olive-light);
+        }
+        .please-supply {
+            --strong: var(--autumn-pine);
+            --light: var(--autumn-pine-light);
+        }
+        .program {
+            --strong: var(--autumn-slate-blue);
+            --light: var(--autumn-slate-blue-light);
+        }
+        .transitioning {
+            --strong: var(--autumn-cocoa);
+            --light: var(--autumn-cocoa-light);
+            column-span: all;
+            max-width: 80em;
+        }
+
+        div {
+            background-color: var(--light);
+            box-sizing: border-box;
+            border: 0.25rem solid var(--strong);
+            border-radius: 1rem;
+            padding: 1rem;
+        }
+
+        h1, h2:first-child {
+            background-color: var(--strong);
+            color: var(--light);
+            margin: -1rem -1rem 1rem -1rem;
+            padding: 0.5em;
+        }
+
+        h2, h3 {
+            color: var(--strong);
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: none;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        caption {
+            caption-side: bottom;
+            font-style: italic;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="welcome">
+    <h1>Welcome</h1>
+
+    <p>Kia Ora, I am excited to invite you and your whanau into my home-based
+        childcare.</p>
+
+    <h2>About Me</h2>
+
+    <p>I am an experienced educator who lives in Beach Haven.  I have worked in
+        childcare for over 20 years with a Diploma of Teaching ECE, CACHE
+        certificate and National Nanny certificate.</p>
+
+    <p>I first started working in centres until I had my own children. I soon
+        realized that centre life was not working for my family.
+        I moved to home-based care when my 2 eldest children were toddlers.</p>
+
+    <p>My third child has special needs and requires extra support for life.</p>
+
+</div>
+<div class="program">
+    <h1>My Program</h1>
+
+    <p>Small ratios 4 children max, with max 2 under 2</p>
+
+    <p>Amazing support from my Tiny Nation visiting tutor</p>
+
+    <p>Learning stories, planning and daily routine on story park where parents
+        can comment</p>
+
+    <p>Monthly outings with Tiny Nation educators</p>
+
+    <p>Weekly visits to music, play groups, Nature play, play-dates with other
+        educators, parks and beach outings.</p>
+
+    <p>I have a big outdoor area with a play kitchen and a slide. A place to ride
+        bikes, lots of water play, a chalk board and a painting easel and much more.</p>
+
+    <p>I have soft play, science, sensory play and play dough, messy play, bubbles,
+        and much more.</p>
+</div>
+
+<div class="philosophy">
+<h1>My Philosophy</h1>
+
+<p>I believe children lean through doing and getting involved while taking
+    age-appropriate risks.</p>
+
+<p>I believe following the children’s interests by using a range of activities
+    to extend their learning will create confident learners.</p>
+
+<p>I believe independence is a really important part of childcare, and I
+    encourage as much independence for their age and ability.</p>
+
+<p>I aim to plan and create a positive learning environment for all children
+    and foster their learning, so they can form positive meaningful
+    relationships with their peers through play.</p>
+
+<p>I value the relationships I form with children and whanau to create a
+    positive environment for learning.</p>
+
+<p>I value getting out into the community and utilizing parks, bushes and
+    beaches that we have so close to us.</p>
+
+</div>
+
+
+<div class="please-supply">
+<h1>Please Supply</h1>
+
+<ul>
+    <li>Nappies and wipes</li>
+    <li>Sleep sack or comforter to help settle them in or a toy</li>
+    <li>Lunch Box for morning tea, lunch and afternoon tea</li>
+    <li>Milk bottles, formula (if required)</li>
+    <li>Water bottle (no juice, fizzy, or milo)</li>
+    <li>3 changes of clothes and a wet bag</li>
+    <li>Sunscreen and hat for summer</li>
+    <li>Rain jacket, woolly hat, waterproof overalls and gumboots for winter</li>
+</ul>
+</div>
+
+<div class="hours">
+<h1>Hours</h1>
+
+<table>
+    <tr>
+        <td>Monday</td>
+        <td>9:00&mdash;:30</td>
+    </tr>
+    <tr>
+        <td>Tuesday</td>
+        <td>9:00&mdash;:30</td>
+    </tr>
+    <tr>
+        <td>Wednesday</td>
+        <td>9:00&mdash;:30</td>
+    </tr>
+    <tr>
+        <td>Thursday</td>
+        <td>CLOSED</td>
+    </tr>
+    <tr>
+        <td>Friday</td>
+        <td>9:00&mdash;:30</td>
+    </tr>
+    <caption>Negotiable and subject to change.</caption>
+</table>
+</div>
+
+<div class="charges">
+    <h1>Charges</h1>
+
+    <p>Hourly rate is $9.50 an hour per child.</p>
+
+    <p>3-5 year olds are eligible for <a href="https://www.education.govt.nz/education-professionals/early-learning/funding-and-financials/chapter-4-20-hours-early-childhood-education/4-3-fees-donations-optional-charges-and-home-based-educator-top-payments#parents-must-not-pay-fees-for-20-hours-ece-1">20 hours ECE funding</a> with maximum 6 hours per day.</p>
+
+    <p>If your child is sick, on holiday, or absent I charge full fees.</p>
+
+    <p>If myself or my family are sick, on holiday, or any reason I cannot work
+        there is no charge.</p>
+
+    <p>I am closed for public holidays.  If you do require care on public holidays
+        please contact me to discuss arrangements.</p>
+</div>
+
+<div class="contact">
+<h1>Contact Details</h1>
+
+<p>I look forward to working alongside you and your child learning together</p>
+
+<p>Please contact me if you have any more questions</p>
+
+<p>Amanda Breen</p>
+
+<a href="tel:0212572520">0212572520</a>
+
+<address>
+    62A Tramway Road
+    Beach Haven
+</address>
+</div>
+
+<div class="transitioning">
+<h1>Transitioning Into Home-Based Care</h1>
+
+<p>Welcome to Amanda’s home-based care with <a href="https://tinynation.co.nz/">Tiny Nation</a>.</p>
+
+<p>Thank you for choosing me to be your child’s educator.  I am really looking
+    forward to getting to know your child and whanau to settle your child into care.</p>
+
+<p>As part of this transitioning process here are some tips on what can help
+    with the settling process.</p>
+
+<p>While all Tamariki and Whānau are individuals and have different needs, I
+    have found in my experience that this is the best way forward to managing
+    these tricky and emotional transitions.  I understand that it is hard for
+    both children and their parents to let go, and move onto the next stage, so
+    my role is to make this as positive and stress-free as possible.</p>
+</div>
+
+<div class="transitioning">
+
+<h2>Parent and child visits</h2>
+
+<p>I recommend 2-3 visits with a parent or whānau member so that your child
+    can see that it is a safe place and become familiar with both me and other
+    children and the environment.  Seeing that their parents are happy and that
+    this is a positive experience helps when the time comes to leaving your
+    child. This allows me to begin developing a relationship with your child
+    which is key to a successful transition.</p>
+
+<p>These visits are scheduled for 1 hour and at a time that suits both me and
+    your child.  There is no charge for these 3 visits.</p>
+</div>
+
+<div class="transitioning">
+
+<h2>Drop Off Visits</h2>
+
+<p>The next stage of the process is to leave your child for short visits up to
+    1 hour to begin with, then extend these out until your child is ready to
+    stay for a full day.</p>
+
+<p>These are to be booked in on your child’s scheduled days.</p>
+
+<p>You must have filled out all the enrolment details and have a confirmed
+    official start date.  Your child will need to be considered part of the
+    ratio for these visits, so my time is charged at my hourly rate.  I will
+    invoice you for these visits.</p>
+
+<p>For these visits, it is best to drop and go and return within the agreed
+    time frame.  If your child is happy upon pick up that is great and your
+    child will be left knowing Mum and Dad always come back, and it is a
+    positive experience.  Staying for a long time and delaying the inevitable
+    can prolong any stress to both children and parents.</p>
+</div>
+
+<div class="transitioning">
+
+<h2>Transition Visits</h2>
+
+<p>The best time to visit is when your child has had food, are changed and has
+    slept well.  Either in the morning or after nap times.</p>
+
+<p>If your child has a dummy or comforter, I recommend bringing these to help
+    with transitioning.</p>
+
+<p>Talk about the visits and how fun it will be with your child.  Keep it
+    positive and upbeat.  Try not to be nervous or worried as children can pick
+    up adult's emotions.</p>
+
+<p>Communicate with me about your child’s needs, sleep and be honest about how
+    things are &mdash; there is no judgement if you have had a hard day &mdash;
+    I have been there!</p>
+
+<p>Share your child’s interests with me so I can make the learning environment
+    fun and engaging for them.</p>
+
+<p>Before starting home-based care, it is always helpful to get your child into
+    a good sleep routine, encouraging them to self-settle.</p>
+
+</div>
+
+</body>
+</html>
